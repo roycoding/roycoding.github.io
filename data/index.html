@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Data projetcs - Roy Keyes</title>
+	<meta name="description" content="Data projects by Roy Keyes">
+	<meta name="author" content="Roy Keyes">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Custom style
+  ================================================== -->
+    <style type="text/css">
+    p.justify{
+    text-align:justify;
+    }
+    p.center{
+    text-align:center;
+    }
+    </style>
+
+	<!-- Skeleton CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+<!--	<link rel="shortcut icon" href="images/favicon.ico">-->
+<!--	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">-->
+<!--	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">-->
+<!--	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">-->
+
+</head>
+<body>
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<div class="container">
+        <h2 style="text-align:center;">Some data projects</h2>
+        <hr/>
+        <p class="center">This page has some for-fun projects that I've worked on.</p>
+        <br/>
+
+<!----------------Chutes and Ladders--------------------->
+    <div class="sixteen columns">
+		<div class="eleven columns alpha">
+            <h4><a href="../chutes-ladders-d3/">Chutes and Ladders via Markov chains in D3</a></h4>
+            <p>Markov chains can be used to model probabilistic processes, such as financial markets or, in this case, children's games. This <a href="../chutes-ladders-d3/">project</a> is a visualization of the Markov chain model described by Nick Barry in a <a href="http://www.datagenetics.com/blog/november12011/index.html">popular post</a> contrasting the Monte Carlo and Markov chain methods.</p>
+
+            <p>For this project I created the Markov chain simulation with Python and Numpy and created the vizualization with the D3.js Javascript library. Because the visualization is rendered as scaled vector graphics (SVG), it may not appear correctly on less modern browsers. Chrome, Firefox, and Safari should work. The code is found <a href="https://github.com/roycoding/chutes-ladders-d3">here</a> on GitHub.</p>
+		</div>
+
+		<div class="five columns omega" style="text-align:center;">
+            <a href="../chutes-ladders-d3/"><img title="Chutes and Ladders via Markov chains" style="width: 280px; height: 160px;margin-top: 35px;" alt="Chutes and Ladders via Markov chains" src="images/chutesladders1.png" border=0></a>
+		</div>
+    </div>
+    <div class="sixteen columns">
+        <br/>
+        <br/>
+    </div>
+<!----------------Bikeability--------------------->
+    <div class="sixteen columns">
+		<div class="five columns alpha" style="text-align:center;">
+            <a href="../bikeability"><img title="ABQ Bikeability." style="width: 281px; height: 185px;" alt="ABQ Bikeability." src="images/bikeability.png" border=0></a>
+		</div>
+
+		<div class="eleven columns omega">
+            <h4><a href="../bikeability/">How bikable is Albuquerque?</a></h4>
+            <p>As someone who enjoys getting around town by bicyle, I thought it would be interesting to try to quantify how "bikeable" different parts of Albuquerque are. Using data made available by the city of Albuquerque, Samat Jain and I put together this "<a href="../bikeability/">bikeability</a>" map as part of the 2013 ABQ Hack Day.</p>
+
+            <p>Using Python and pandas, we converted XML files to JSON, extracted the values of interest, and calculated a score based on presence and type of biking infrastructure. The map was created with Leaflet.js via Folium, OpenStreetMaps data, and Jinja2. The code is found <a href="https://github.com/roycoding/bikeability">here</a> on GitHub.</p>
+		</div>
+    </div>
+    <div class="sixteen columns">
+        <br/>
+        <br/>
+    </div>
+<!-----------------Salaries----------------------->
+    <div class="sixteen columns">
+		<div class="eleven columns alpha">
+            <h4><a href="./graddata.html">A look at UNM grad student salaries in 2011</a></h4>
+            <p>As a grad student I often wondered how salaries varied across and within departments. I was able to take UNM's public salary data and do a little data crunching to come up with <a href="./graddata.html">some comparisons</a>.</p>
+
+            <p>This project was 95+% data munging/cleaning. The data went from paper &rarr; PDF &rarr; OCR &rarr; semi-structured text. Tools used included: Python, pdftk, IPython, OpenRefine (a.k.a Google Refine), pandas, matplotlib, numpy, and Inkscape.</p>
+		</div>
+
+		<div class="five columns omega" style="text-align:center;">
+            <a href="./graddata.html"><img title="UNM graduate student salaries in 2011." style="width: 278px; height: 159px;" alt="" src="images/salary-by-position1-400px.png" border=0></a>
+		</div>
+    </div>
+    <div class="sixteen columns">
+        <br/>
+        <br/>
+    </div>
+<!--------------------arXiv---------------------->
+    <div class="sixteen columns">
+		<div class="five columns alpha" style="text-align:center;">
+            <a href="http://willworkforscience.blogspot.com/2012/11/medical-physics-papers-on-arxiv-some.html"><img title="Medical physics papers on arXiv.org." style="width: 235px; height: 181px;" alt="Medical physics papers on arXiv.org." src="images/network2-300.png" border=0></a>
+		</div>
+
+		<div class="eleven columns omega">
+            <h4><a href="http://willworkforscience.blogspot.com/2012/11/medical-physics-papers-on-arxiv-some.html">Medical physics articles on arXiv.org</a></h4>
+            <p>Medical physics has been slow to join the open access movement, but it's catching on. In this project <a href="http://willworkforscience.blogspot.com/2012/11/medical-physics-papers-on-arxiv-some.html">I took a look</a> at the papers submitted to the medical physics category (physics.med-ph) on arXiv.org.</p>
+
+            <p>To get the data I used the arXiv's public API. Data munging, analysis, and visualization was done with Python, IPython, feedparser, fuzzywuzzy, numpy, scipy, matplotlib, NetworkX, and Inkscape.</p>
+		</div>
+    </div>
+    <div class="sixteen columns">
+        <br/>
+        <br/>
+    </div>
+<!----------------Sparkmeters------------------------>
+    <div class="sixteen columns">
+		<div class="eleven columns alpha">
+            <h4><a href="../sparkmeters/">Sparkmeters</a></h4>
+            <p>Not strictly a data project, but rather an information design project, <a href="../sparkmeters/">sparkmeters</a> are small graphics that are inline with text showing the relative value of the item they follow. They are inspired by and reminiscent of sparklines.</p>
+
+            <p>Sparklines were implemented in the D3.js Javascript library. Because they are rendered as scaled vector graphics (SVG), they may not appear correctly on less modern browsers. Chrome, Firefox, and Safari should work. The code is found <a href="https://github.com/roycoding/sparkmeters">here</a> on GitHub.</p>
+		</div>
+
+		<div class="five columns omega" style="text-align:center;">
+            <a href="../sparkmeters/"><img title="Sparkmeters" style="width: 226px; height: 55px;margin-top: 70px;" alt="Sparkmeters" src="images/sparkmeters.png" border=0></a>
+		</div>
+    </div>
+<!--------------------------------------------->
+
+
+        <div class="sixteen columns">
+        <br/>
+            <hr />
+            <div style="text-align: right; margin-bottom:10px;"><a href="http://roycoding.github.io">Roy Keyes</a></div>
+		</div>
+
+	</div><!-- container -->
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
