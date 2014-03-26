@@ -143,7 +143,7 @@
 		nav { position: relative; }
 		nav ul,
 		.carbonad {
-				display: none;
+/*				display: none;*/
 		}
 		#logo { text-align: left; }
 		#examples .four.columns {
@@ -154,7 +154,7 @@
 	/* Mobile Landscape */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
 		nav ul {
-			display: none;
+/*			display: none;*/
 		}
 	}
 
