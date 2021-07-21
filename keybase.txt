@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/roycoding
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://roycoding.com
+  * I am roycoding (https://keybase.io/roycoding) on keybase.
+  * I have a public key ASDVHrjWw3UsUDfOKGQn8npghnAodcUtFlsdcsJQI6hgkgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012086d6f525f32381308c4efd96f155030cfe8e28f366219a92d0ee5846662aad1c0a",
+      "host": "keybase.io",
+      "kid": "0120d51eb8d6c3752c5037ce286427f27a6086702875c52d165b1d72c25023a860920a",
+      "uid": "78e11d4c139a8f75823d8c4acc7f1119",
+      "username": "roycoding"
+    },
+    "merkle_root": {
+      "ctime": 1626909071,
+      "hash": "6d496055d0c6474eaedeaf66d275c948ce17eea1d7dad62eab883888f2c3f14430fd8537d5eb88cf181d210cc6b6ae645e2eb7ee1589439656f122a832cfcace",
+      "hash_meta": "68c16bafdc8da639451e581d55fd053f78b758115aadde17926cab08ea976552",
+      "seqno": 20421312
+    },
+    "service": {
+      "entropy": "GFqCwJc95k30gA1BykjdmVG4",
+      "hostname": "roycoding.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.2"
+  },
+  "ctime": 1626909099,
+  "expire_in": 504576000,
+  "prev": "409f28d7daf8d8013989144a9173fd4b1f47f665b257eac7e532ba84edf4a169",
+  "seqno": 47,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg1R641sN1LFA3zihkJ/J6YIZwKHXFLRZbHXLCUCOoYJIKp3BheWxvYWTESpcCL8QgQJ8o19r42AE5iRRKkXP9Sx9H9mWyV+rH5TK6hO30oWnEIFQBjaIZwpBUPV3CMss0HOELy0FEwZXm42LQ/0dpnNcqAgHCo3NpZ8RAB3pM2y3n6nnTV+FtBVtKIYheK2q9pzGUpzUc0xQsh9v783vRmO5j1tbQ+w/CqEaVzweSztBNMicNHq4ypvc8CahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIWyNRE0THOLdS8fkZKbWqHNTAdLIzAhFbPUT0P9wurOo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/roycoding
+
+==================================================================
