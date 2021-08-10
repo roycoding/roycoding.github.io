@@ -1,5 +1,65 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>The Roycoding Blog</title><link>https://roycoding.com/blog</link><description>Occasional blog posts from roycoding</description><atom:link href="https://roycoding.com/blog" rel="self"/><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://www.gravatar.com/avatar/0b896dff2667cbfee4237e889f6d4446.jpg</url><title>The Roycoding Blog</title><link>https://roycoding.com/blog</link></image><language>en</language><lastBuildDate>Tue, 13 Jul 2021 17:18:42 +0000</lastBuildDate><item><title>I wrote a book</title><link>https://gist.github.com/roycoding/a48c80d4400036ab1ddad927f48dd72f</link><description>&lt;!DOCTYPE html&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>The Roycoding Blog</title><link>https://roycoding.com/blog</link><description>Occasional blog posts from roycoding</description><atom:link href="https://roycoding.com/blog" rel="self"/><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://www.gravatar.com/avatar/0b896dff2667cbfee4237e889f6d4446.jpg</url><title>The Roycoding Blog</title><link>https://roycoding.com/blog</link></image><language>en</language><lastBuildDate>Tue, 10 Aug 2021 14:41:16 +0000</lastBuildDate><item><title>What’s hard about hiring data roles</title><link>https://gist.github.com/roycoding/909e2152e5c799cb0d387bbeced4face</link><description>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;What&amp;apos;s hard about hiring data roles&lt;/title&gt;
+        &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css"&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css"&gt;
+&lt;style&gt;
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        &lt;/style&gt;
+        &lt;style&gt;
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+&lt;/style&gt;
+        
+        
+        
+    &lt;/head&gt;
+    &lt;body class="vscode-body vscode-light"&gt;
+        &lt;h1 id="whats-hard-about-hiring-data-roles"&gt;What's hard about hiring data roles&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://roycoding.com"&gt;Roy Keyes&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;9 Aug 2021&lt;/em&gt; - This is a post on my &lt;a href="https://roycoding.com/blog"&gt;blog&lt;/a&gt;. Get the &lt;a href="https://roycoding.com/blog/rss.xml"&gt;RSS feed&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/747219/128797161-d5c8fb32-e39e-40aa-b454-3ded365c4786.jpg" alt="children-fishing.jpg"&gt;&lt;/p&gt;
+&lt;h2 id="hiring-is-hard-and-data-hiring-has-special-challenges"&gt;Hiring is hard and data hiring has special challenges&lt;/h2&gt;
+&lt;p&gt;I recently released a book about hiring called &lt;a href="http://dshiring.com"&gt;Hiring Data Scientists and Machine Learning Engineers&lt;/a&gt;. Some of the questions I've fielded related to my book are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Why is hiring data roles hard?&lt;/li&gt;
+&lt;li&gt;What makes DS and MLE hiring specifically difficult?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These questions are at the core of why I wrote my book. Hiring in general is difficult, but hiring for data roles comes with some special challenges. In this post I will lay out my view on why data roles are specifically hard to hire for.&lt;/p&gt;
+&lt;h2 id="hype-and-hope"&gt;Hype and hope&lt;/h2&gt;
+&lt;p&gt;Data science and machine learning have emerged in the last ten years as particularly promising approaches to a number of business problems. Organizations have more access to more data than ever and the hope that business value can be extracted from that data has reached a fever pitch.&lt;/p&gt;
+&lt;p&gt;The hype around data science and machine learning (and something called &amp;quot;artificial intelligence&amp;quot;) has driven all sorts of organizations to build out data teams. The hype has also led a huge number of people to enter the field in the hopes of landing an interesting and highly compensated career (remember the &amp;quot;&lt;a href="https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century"&gt;sexiest job of the 21st century&lt;/a&gt;&amp;quot;?).&lt;/p&gt;
+&lt;p&gt;This is still the early days of this era of data science and machine learning. While there has been some evolution of roles and titles, the field is extremely broad and there is still a lot of disagreement on what exactly data scientists, machine learning engineers, and related roles actually do. A data scientist at one company may have a very different skill set and set of duties than a data scientist at another company, despite the shared title.&lt;/p&gt;
+&lt;h2 id="hiring-amid-the-hype"&gt;Hiring amid the hype&lt;/h2&gt;
+&lt;p&gt;The newness, hype, and lack of clarity create a number of challenges for people trying to hire for these roles.&lt;/p&gt;
+&lt;p&gt;The fact that these fields are relatively new means that there are few really experienced data scientists and machine learning engineers, but also there are few people that are really experienced in hiring for these roles. The newness means that the easiest thing to do has been to simply use or adapt hiring strategies from more established roles, such as for software engineering. This creates challenges, as the wrong assessment strategies will lead to more false positives and false negatives in the process.&lt;/p&gt;
+&lt;p&gt;The newness also means that finding those experienced candidates can be very difficult and ultimately very expensive when you do find them, since the supply is so low. Organizations are faced with the fact that experienced talent may simply be outside their budgets.&lt;/p&gt;
+&lt;p&gt;The wide breadth of topics, skills, and technologies that fall under data science and machine learning means that there is often a mismatch between the open role and the candidates. It's often not clear to either side what the other brings to the hiring table, and this can often lead to confusion and frustration.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;I thought this was a data science role!&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;It is!&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This lack of alignment and understanding on the basic role definitions is a common source of issues.&lt;/p&gt;
+&lt;p&gt;The hype has led to a huge influx of people joining the field, leading to a glut of early career people applying for DS and MLE roles. This means that a hiring manager looking to fill more junior level roles is likely to be overwhelmed with the volume of applicants. A team looking to fill both junior level and senior level positions may be faced with two extremely different sourcing problems: too many and too few applicants at the same time.&lt;/p&gt;
+&lt;h2 id="overcoming-these-challenges"&gt;Overcoming these challenges&lt;/h2&gt;
+&lt;p&gt;To hire effectively and efficiently, you need to understand these challenges and design a hiring strategy to address them. Core aspects of such a strategy are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Understanding your business needs and determining the specific roles that match.&lt;/li&gt;
+&lt;li&gt;Creating a job ad that crisply describes the role you are hiring for.&lt;/li&gt;
+&lt;li&gt;Understanding your resources, your constraints, and the market overall.&lt;/li&gt;
+&lt;li&gt;Designing a recruiting, assessment, and interviewing process that's optimized with your resources and constraints in mind.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can read more in depth on these issues in my book, which is available at &lt;a href="http://dshiring.com"&gt;dshiring.com&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;/body&gt;
+    &lt;/html&gt;
+</description><author>roy@roycoding.com (Roy Keyes)</author><guid isPermaLink="false">https://gist.github.com/roycoding/909e2152e5c799cb0d387bbeced4face</guid><pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate></item><item><title>I wrote a book</title><link>https://gist.github.com/roycoding/a48c80d4400036ab1ddad927f48dd72f</link><description>&lt;!DOCTYPE html&gt;
     &lt;html&gt;
     &lt;head&gt;
         &lt;meta charset="UTF-8"&gt;
