@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>How I wrote my book - the technical details</title>
+        
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Skeleton CSS
+        ================================================== -->
+        <link rel="stylesheet" href="../../data/stylesheets/base.css">
+        <link rel="stylesheet" href="../../data/stylesheets/skeleton.css">
+        <link rel="stylesheet" href="../../data/stylesheets/layout.css">
+        <link rel="stylesheet" href="../../data/stylesheets/docs.css">
+
+        <!-- Font Awesome
+        ================================================== -->
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+        <!-- Custom style
+        ================================================== -->
+        <style type="text/css">
+        p.justify{
+        text-align:justify;
+        }
+        p.center{
+        text-align:center;
+        }
+
+        a:link  {color: #4169E1; text-decoration: none} /* RoyalBlue */
+        a:visited {color: #2E4A9D; text-decoration: none}
+        a:hover {color: #A4BBFE; text-decoration: none}
+        a.menu:link  {color: #222; text-decoration: none}
+        a.menu:visited {color: #222; text-decoration: none}
+        a.menu:hover {color: #A4BBFE;}
+
+        li#icons{
+        /*text-align:center;*/
+        }
+
+        ul.default{
+            padding-left: 2em;
+        }
+
+        li.default{
+            list-style: disc;
+        }
+
+        div.blogpost{
+        font-size: 1.2em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+        }
+
+        div.date{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
+    </style>
+    </head>
+<body>
+    <!-- Primary Page Layout
+    ================================================== -->
+
+    <div class="container">
+        <div class="three columns sidebar">
+            <nav>
+                <h3 id="logo"><a href="https://roycoding.com/">Roy Keyes<a/></h3>
+                <ul>
+                    <li><a class="menu" href="http://dshiring.com">My book on hiring</a></li>
+                    <li><a class="menu" href="http://dshiring.com"><img src="../../data/images/hdsmle_cover_200px.png" alt="Cover of the book Hiring Data Scientists and Machine Learning Engineers"></a></li>
+                    <li><a class="menu" href="https://zefsdata.com">Zefs Data Science</a></li>
+                    <li><a class="menu" href="https://roycoding.com/data/">Some data projects</a></li>
+                    <li><a class="menu" href="https://roycoding.com/blog/">Blog</a></li>
+                    <li id="icons"><a class="menu" href="https://github.com/roycoding"><i class="fa fa-github fa-2x" title="Github profile"></i><img src="" alt="Github" style="display:none"/></a>&nbsp;&nbsp;&nbsp;<a class="menu" href="https://twitter.com/roycoding"><i class="fa fa-twitter fa-2x" title="Twitter: @roycoding"></i><img src="" alt="@roycoding" style="display:none"/></a>&nbsp;&nbsp;&nbsp;<a class="menu" href="mailto:roy@roycoding.com"><i class="fa fa-envelope fa-2x" title="Email: roy@roycoding.com"></i><img src="" alt="Email" style="display:none"/></a>&nbsp;&nbsp;&nbsp;<a class="menu" href="https://roycoding.com/blog/rss.xml"><i class="fa fa-rss fa-2x" title="roycoding RSS feed"></i><img src="" alt="roycoding RSS feed" style="display:none"/></a></li>
+                </ul>
+            </nav>
+            &nbsp;
+        </div>
+
+        <div class="twelve columns offset-by-one content">
+            <div style="align-items: center; display: flex; justify-content: space-between;">
+                <h1 id="how-i-wrote-my-book---the-technical-details">How I wrote my book - the technical details</h1>
+            </div>
+            <p><strong><a href="https://roycoding.com">Roy Keyes</a></strong></p>
+            <blockquote>
+            <p><em>18 Aug 2021</em> - This is a post on my <a href="https://roycoding.com/blog">blog</a>. Get the <a href="https://roycoding.com/blog/rss.xml">RSS feed</a>!</p>
+            </blockquote>
+            <p><img src="https://roycoding.com/blog/2021/images/writing-hand.jpg" alt="writing hand"></p>
+            <p>I recently released a book called <a href="http://dshiring.com">Hiring Data Scientists and Machine Learning Engineers</a>. I self-published the book via a platform called <a href="https://leanpub.com">Leanpub</a>. This post is about how I actually did my writing, primarily the technical details of my setup and workflow.</p>
+            <h2 id="lets-say-youve-decided-to-self-publish-a-book">Let's say you've decided to self-publish a book...</h2>
+            <p>When I decided to actually write a book, my main criteria was being able to create and distribute something high quality with the least amount of effort, while retaining a lot of control over the final product. As mentioned in my early blog post that talked about my <a href="https://roycoding.com/blog/2021/book.html">motivation for writing the book</a>, I came across Leanpub because a friend had published a <a href="http://fizzbuzzbook.com/">book</a> there.</p>
+            <h3 id="why-leanpub-in-particular">Why Leanpub in particular?</h3>
+            <p>In the era of social media, blogs, podcasts, and streaming video creators can essentially deliver directly to their audiences. Similarly, self-publishing is not only easier than ever, but also just makes sense for a lot of people. This is the age of fast turnaround and disintermediation, which is just a fancy term for removing the middle man (and usually replacing them with a &quot;platform&quot;).</p>
+            <p>But why Leanpub? There are a lot of choices for self-publishing a book these days. I chose Leanpub for a few specific reasons:</p>
+            <ul class="default">
+            <li class="default">It's aimed primarily at technical content (computery stuff).</li>
+            <li class="default">It already has a lot of good data science and machine learning-related books and courses.</li>
+            <li class="default">It provides several nice authoring workflows (see below).</li>
+            <li class="default">It pays a good royalty rate (80% to the author).</li>
+            <li class="default">It allows you to publish and sell in-progress works.</li>
+            <li class="default">It allows you to set a minimum price and allows readers to pay what they want over that.</li>
+            <li class="default">It allows you to create coupons (including programmatically via API).</li>
+            </ul>
+            <p>Overall I like how pro-author they are.</p>
+            <h2 id="how-i-wrote-my-book">How I wrote my book</h2>
+            <p>Leanpub has several authoring workflows available, including fully in-browser authoring, but I decided to use a their more developer-style workflow. It starts with writing the content locally in <a href="http://markua.com/">Markua</a>, Leanpub's book oriented dialect of Markdown, using git for version control, pushing changes to a Github repo, and then finally Leanpub pulling the latest version of the source and building the ebook files in several formats for you.</p>
+            <p>I really liked writing that way, because it's similar to how I already write notes, documentation, and blog posts in my text editor (VS Code these days). Markua is close enough to vanilla Markdown that the Markdown extension I use with VS Code renders it well enough for writing. In the end you need to have Leanpub build updated ebook files to know for sure how things will look, but this is definitely not a deal breaker.</p>
+            <h2 id="pretending-to-be-a-designer">Pretending to be a designer</h2>
+            <p>I enjoy making graphics, and even though I am a certified amateur, I decided to try my hand at creating the cover for my book. I created the cover and other graphics using <a href="https://inkscape.org/">Inkscape</a>, which is a pretty incredible open source vector graphics editor.</p>
+            <p>The graphics I used inside the book, which were primarily decorative, were a mix of vector graphics I created by hand, modified public domain vector graphics, and equations typeset using LaTeX within Inkscape.</p>
+            <p>The build process Leanpub uses allows you to use SVG files directly, so instead of exporting my graphics to a bitmap format I used SVG, with the exception of the cover graphic.</p>
+            <h2 id="writing-on-a-6-screen">Writing on a 6&quot; screen</h2>
+            <p>At some point while writing my book, it occurred to me that I could probably write directly on my phone. This is probably viewed as masochistic by many, but it seemed like a fun thing to try &quot;because it was there&quot;.</p>
+            <p>To get this to work I installed an app called <a href="https://termux.com/">Termux</a>, which is a terminal emulator and Linux environment for Android, available via F-Droid, an Android app store with only open source apps. Termux allows you to install and run a lot of the programs that Linux/Unix users expect to be able to run from the command line, including git.</p>
+            <p><img src="https://roycoding.com/blog/2021/images/termux.png" alt="Termux"></p>
+            <p>Next up I installed git and ssh via the Termux package manager:</p>
+            <blockquote>
+            <p>pkg install git</p>
+            </blockquote>
+            <blockquote>
+            <p>pkg install openssh</p>
+            </blockquote>
+            <p>Once I installed git, I set up a new Github key on my phone following the <a href="https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh">usual process</a>, pulled down my book repo and was ready to start writing. Since I was writing in a Markdown dialect, I looked for a Markdown editing app, ultimately settling on an app called <a href="https://gsantner.net/project/markor.html">Markor</a>. The workflow is then identical to writing on a full-sized computer.</p>
+            <ol>
+            <li>Write some.</li>
+            <li>Commit the changes in git.</li>
+            <li>Push the changes to Github.</li>
+            </ol>
+            <p>As you might imagine, long-form writing on a virtual phone keyboard is not the funnest way to write. The nice thing about a phone is that they tend to handle voice typing well. While I did that some, I prefer to type when writing. Fortunately the keyboard that I normally use is very small and designed with portability in mind: the <a href="https://shop.keyboard.io/products/keyboardio-atreus">Keyboardio Atreus</a>. The Atreus is a small, split, columnar layout, mechanical keyboard. Yes, you need to be a keyboard geek to use the Atreus, but look, you've read this far for a reason.</p>
+            <p><img src="https://roycoding.com/blog/2021/images/atreus.jpg" alt="Keyboardio Atreus" title="The Keyboardio Atreus (not my hands)"></p>
+            <p>So aside from small edits, I did most writing on my phone with the same keyboard I used the rest of the time on my computer.</p>
+            <h2 id="what-might-be-improved">What might be improved</h2>
+            <p>Overall I've been happy with the choices I made and the process, but it was certainly not without room for improvement.</p>
+            <p>It would be nice to be able to build the book completely locally, if only for the sake of portability. What if I decide I want to take my Markua source elsewhere? Would I need to convert to a completely different format?</p>
+            <p>Another issue was sharing my work with others for editing and commentary. For people that are used to a Github centric workflow, I could share my source text with them and they could comment or make proposed changes just like they would with code. But for other people who helped me with the book, but who were not used to working with git, I would send them PDF or raw text, which was not ideal. It was not a showstopper, but it could certainly be improved.</p>
+            <h2 id="what-does-it-all-mean">What does it all mean?</h2>
+            <p>Writing a book can be a long, often grueling process. It was nice to be able to use the tools I'm used to and to branch off into the (practical[?], but) whimsical as well.</p>
+            <p>If you have any questions about this process, please email/message me.</p>
+            <p>And don't forget to check out my hiring book at <a href="http://dshiring.com">dshiring.com</a>.</p>
+        </div>
+    </div>
+
+</body>
+</html>
