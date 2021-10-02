@@ -1,5 +1,60 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>The Roycoding Blog</title><link>https://roycoding.com/blog</link><description>Occasional blog posts from roycoding</description><atom:link href="https://roycoding.com/blog" rel="self"/><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://www.gravatar.com/avatar/0b896dff2667cbfee4237e889f6d4446.jpg</url><title>The Roycoding Blog</title><link>https://roycoding.com/blog</link></image><language>en</language><lastBuildDate>Thu, 19 Aug 2021 17:05:50 +0000</lastBuildDate><item><title>How I wrote my book – the technical details</title><link>https://roycoding.com/blog/2021/writing.html</link><description>&lt;!DOCTYPE html&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>The Roycoding Blog</title><link>https://roycoding.com/blog</link><description>Occasional blog posts from roycoding</description><atom:link href="https://roycoding.com/blog" rel="self"/><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://www.gravatar.com/avatar/0b896dff2667cbfee4237e889f6d4446.jpg</url><title>The Roycoding Blog</title><link>https://roycoding.com/blog</link></image><language>en</language><lastBuildDate>Sat, 02 Oct 2021 19:05:05 +0000</lastBuildDate><item><title>Why I don’t screen resumes</title><link>https://roycoding.com/blog/2021/not_using_resumes.html</link><description>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Why I don&amp;apos;t screen resumes&lt;/title&gt;
+        
+        &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css"&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css"&gt;
+&lt;style&gt;
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        &lt;/style&gt;
+        &lt;style&gt;
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+&lt;/style&gt;
+        
+        
+        
+    &lt;/head&gt;
+    &lt;body class="vscode-body vscode-light"&gt;
+        &lt;h1 id="why-i-dont-screen-resumes"&gt;Why I don't screen resumes&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://roycoding.com"&gt;Roy Keyes&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;2 Oct 2021&lt;/em&gt; - This is a post on my &lt;a href="https://roycoding.com/blog"&gt;blog&lt;/a&gt;. Get the &lt;a href="https://roycoding.com/blog/rss.xml"&gt;RSS feed&lt;/a&gt;!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Probably the most controversial recommendation I make about hiring for data roles is to ignore resumes. In this post I'll talk about what that really means and why (and when) I recommend that.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://roycoding.com/blog/2021/images/resumes.jpg" alt="Resume screening meme"&gt;&lt;/p&gt;
+&lt;h2 id="too-many-damn-resumes"&gt;Too many damn resumes&lt;/h2&gt;
+&lt;p&gt;Back around 2017 something changed. I was hiring data scientists, as I had done before, but there was one big difference: simply too many applicants! I was (again) working at a young startup with little to no name recognition, but applications were flooding in. The volume of candidates had grown incredibly in just a couple years. My previous process could not handle this new scale. In order to handle this increased volume, I implemented a resume scoring process designed to be fast and as fair as possible.&lt;/p&gt;
+&lt;p&gt;I soon found that even this was not efficient enough to handle the growing volume. I decided to take the more radical step of ignoring resumes completely. And it seemed to work.&lt;/p&gt;
+&lt;h2 id="why-ignore-resumes"&gt;Why ignore resumes?&lt;/h2&gt;
+&lt;p&gt;Yes I'm suggesting that you ignore the carefully crafted career summary that your job hopefuls are sending in. Despite the hours (and even money) that they've poured into creating those resumes[1], one thing can make them irrelevant: applicant volume.&lt;/p&gt;
+&lt;p&gt;But let's talk about what this actually means. What do I mean by excessive applicant volume? If you are in a situation where your applicant numbers greatly outpace your hiring resources, resume screening is likely to be a bottleneck. For me that meant hundreds or thousands of applicants, where I was the only one who could dedicate time (and expertise) to evaluating resumes.&lt;/p&gt;
+&lt;p&gt;Sure, you can have people glance at resumes or use keyword filtering (or worse, some sort of &amp;quot;AI&amp;quot; resume filter), but this is not going to give you the effective and fair screening that you want. Resumes themselves are often messy and also allow you to over-index on certain things, such as schools, past employer names, and even more insidious signals to bias against.&lt;/p&gt;
+&lt;h2 id="so-what-do-you-do-if-you-dont-look-at-resumes"&gt;So what do you do, if you don't look at resumes?&lt;/h2&gt;
+&lt;p&gt;Resumes are nice, if quite imperfect, summaries and advertisements of a candidates skills and experience. The whole point is that a short document can convey their fit for the roles they're applying for. So what's a reasonable way to not actually look at resumes?&lt;/p&gt;
+&lt;p&gt;If you've read my &lt;a href="https://dshiring.com"&gt;book&lt;/a&gt; or other &lt;a href="https://roycoding.com/blog"&gt;blog posts&lt;/a&gt;, you'll know that the first steps in hiring are to understand your needs, identify the tasks and skills needed, and the skills you want to evaluate. In a situation with a very high candidate volume, I recommend using a technical skills assessment as a first step screen. Typically I'll use a relatively short, automated, online screen that covers basic skills needed for the role[2].&lt;/p&gt;
+&lt;p&gt;I give this assessment to almost all applicants, sometimes (cheating and ) briefly checking to see if the candidate was in the wrong place (e.g. machinists applying for ML roles, which I've seen before!). This assessment covers skills that would be otherwise probed in the interview process, but in this case are just moved to the first step.&lt;/p&gt;
+&lt;p&gt;The whole point of this is to reduce the size of your candidate funnel. That tends to happen in a couple ways. Some people simply won't take a skills assessment, because either they refuse to out of principle (probably a bad idea in this industry) or because they see the assessment as too much friction for this specific role [3]. The other way is of course candidates not doing well enough on the assessment, relative to your perceived needs or simply the rest of the candidate pool.&lt;/p&gt;
+&lt;h2 id="ok-but-what-about-the-resumes"&gt;OK, but what about the resumes?&lt;/h2&gt;
+&lt;p&gt;The skills assessment only covers a portion of the total evaluation of a candidate. You're still going to interview them by talking to them and going more in depth on their background and technical skills.&lt;/p&gt;
+&lt;p&gt;For this process, I actually do still use people's resumes, but it's more of an additional piece of information, rather than a something to screen against. Imagine two otherwise identical candidates, the one with more time spent in your domain or using the techniques you need, as reflected in their resume, is probably the one you'd choose.&lt;/p&gt;
+&lt;p&gt;So the headline is somewhat misleading, but flipping this process has proven useful if dealing with the candidate volumes that I've seen, especially when hiring for early career data roles in particular[4].&lt;/p&gt;
+&lt;p&gt;Hiring strategy and process are incredibly difficult and controversial things. My main advice is to put more effort into it than you think you might need to, create a plan, and be ready to change as needed. In this case, I ended up making a somewhat radical change, but this was in response to the seemingly exponential change happening in the applicant pool. It seemed to work.&lt;/p&gt;
+&lt;p&gt;For more on this topic, please check out my &lt;a href="https://dshiring.com"&gt;book&lt;/a&gt;, subscribe to my &lt;a href="https://roycoding.com/blog"&gt;blog&lt;/a&gt; (--&amp;gt; the &lt;a href="https://roycoding.com/blog/rss.xml"&gt;RSS feed&lt;/a&gt;), and follow me on Twitter, &lt;a href="https://twitter.com/roycoding"&gt;@roycoding&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[1] And cover letters&lt;/p&gt;
+&lt;p&gt;[2] I plan to cover this in another blog post, otherwise, please check out the chapter in my &lt;a href="https://dshiring.com"&gt;book&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;[3] I do my best to accommodate candidates that have logistical difficulties with the assessment. You want your candidates to have as positive an experience as possible, so flexibility is always good.&lt;/p&gt;
+&lt;p&gt;[4] In situations where you have a lower ratio of applicants to resources (e.g. more senior level roles or working with a large HR/recruiting team), looking at resumes is totally reasonable. On the other hand, having used the &amp;quot;no resumes&amp;quot; process, questions about how fair it is to use resumes to make initial decisions seem more tangible.&lt;/p&gt;
+
+    &lt;/body&gt;
+    &lt;/html&gt;</description><author>roy@roycoding.com (Roy Keyes)</author><guid isPermaLink="false">https://roycoding.com/blog/2021/not_using_resumes.html</guid><pubDate>Sat, 02 Oct 2021 00:00:00 +0000</pubDate></item><item><title>How I wrote my book – the technical details</title><link>https://roycoding.com/blog/2021/writing.html</link><description>&lt;!DOCTYPE html&gt;
     &lt;html&gt;
     &lt;head&gt;
         &lt;meta charset="UTF-8"&gt;
