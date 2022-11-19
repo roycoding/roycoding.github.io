@@ -1,4 +1,80 @@
 title	url	date	content
+The shortest definition of embeddings?	https://roycoding.com/blog/2022/embeddings.html	11/19/22	"<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
+    <title>The shortest definition of embeddings&quest;</title>
+    <style>
+        .vscode-dark img[src$=\#gh-light-mode-only],
+        .vscode-light img[src$=\#gh-dark-mode-only] {
+            display: none;
+        }
+    </style>
+
+    <link rel=""stylesheet"" href=""https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css"">
+    <link rel=""stylesheet"" href=""https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css"">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+    <style>
+        .task-list-item {
+            list-style-type: none;
+        }
+
+        .task-list-item-checkbox {
+            margin-left: -20px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body class=""vscode-body vscode-light"">
+    <h1 id=""the-shortest-definition-of-embeddings"">The shortest definition of embeddings?</h1>
+    <p><strong><a href=""https://roycoding.com"">Roy Keyes</a></strong></p>
+    <blockquote>
+        <p><em>19 Nov 2022</em> - This is a post on my <a href=""https://roycoding.com/blog"">blog</a>. Get the <a href=""https://roycoding.com/blog/rss.xml"">RSS feed</a>!</p>
+    </blockquote>
+    <p><img src=""https://roycoding.com/blog/2022/images/embeddings.jpg"" alt=""A Stable Diffusion generated image of an embedding space""></p>
+    <p>Embeddings are a very important concept in deep learning and several related techniques. They are powerful and flexible and at the core of many modern machine learning systems. But, they are also tricky to describe.</p>
+    <p>Here is my attempt to create a very succinct definition and description of embeddings.</p>
+    <blockquote>
+        <h2 id=""embeddings-are-learned-transformations-to-make-data-more-useful"">Embeddings are learned transformations to make data more useful</h2>
+    </blockquote>
+    <p>What does this mean?</p>
+    <ul>
+        <li>
+            <p><strong>Learned</strong> means that the parameters of the transformation are determined using the data, rather than just a fixed algorithm. The parameters are optimized for some task using the data as input. E.g. teaching a small neural network to determine if words found in a text dataset are from the same sentence. The network needs to transform the input text data in a way that makes this task as easy as possible (this is basically word2vec).</p>
+        </li>
+        <li>
+            <p><strong>Transformations</strong> are how data is changed from being represented in one way into another. This typically means mapping data from one vector space to another, such as taking words from a vocabulary of 10k words that are one-hot-encoded in a 10k dimensional space to a 100 dimensional &quot;dense&quot; vector space.</p>
+        </li>
+        <li>
+            <p><strong>Data</strong> can be any type of information: words, sentences, images, audio, webpages, time series. Often the input data is considered a &quot;feature&quot; for machine learning.</p>
+        </li>
+        <li>
+            <p><strong>Useful</strong> means that the new representation of the data contains more information in a way that makes the ultimate task easier. Useful can mean:</p>
+            <ul>
+                <li>Grouping similar items together or warping the representations to make existing groups more easily identifiable (e.g. linearly separable).</li>
+                <li>Representing the data in fewer dimensions, whether to more easily encode relationships between the data or for computational efficiency.</li>
+                <li>Being reusable for many closely related tasks.</li>
+            </ul>
+        </li>
+    </ul>
+    <p>Embeddings are incredibly useful for many data related tasks. They are especially useful for things like search (e.g. what other images are like this one?) and recommendations. More generally they are useful for working with data that is not inherently numeric, such as text, images, or audio.</p>
+    <p>While I didn't touch on the technical aspects of creating or using embeddings, hopefully this is helpful as a conceptual overview for you.</p>
+    <ul>
+        <li>Note: My definition is slightly different from others, because I don't think that embeddings strictly need to be in a lower dimensional space, but that is often the best choice for the task at hand. What exactly qualifies as an embedding can get a little fuzzy when considering basic, non-learned encodings (does one-hot encoding count) or learned transformations that are only used as internal (latent) representations, etc.</li>
+    </ul>
+
+</body>
+
+</html>"
 Why I don’t screen resumes	https://roycoding.com/blog/2021/not_using_resumes.html	2 Oct 2021	"<!DOCTYPE html>
     <html>
     <head>
@@ -263,11 +339,11 @@ I wrote a book	https://roycoding.com/blog/2021/book.html	13 July 2021	"<!DOCTYPE
     </body>
     </html>"
 Notifications with Keybase: You get a puppy!	https://gist.github.com/roycoding/87ec2c423c54300ead2fdf97fb1dd939	07/22/20	
-It's 2020 and I made an RSS feed for my blog (with Python)	https://gist.github.com/roycoding/c4af3c1ea4ae2d9b4ce9536dab20d3da	21-May-2020	
-Multi-armed banditry in Python with slots	https://gist.github.com/roycoding/fc430c360c87a755047185b796c10a5e	22-Aug-2016	
-A year of working remotely	https://gist.github.com/roycoding/59e209032abc8bd3473b	29-Feb-2016	
-4 Core attributes of a data scientist	https://gist.github.com/roycoding/3739c6b3b54c27ba6ca3	17-Jan-2016	
-Computer generated art (in Python)	http://nbviewer.ipython.org/gist/roycoding/13e70595e9c74e735c86	21-Sep-2014	
-MapReduce Patterns (in Python)	https://gist.github.com/roycoding/b11b650d3ed8d4e86c39	17-Sep-2014	
-Klackers strategy: Monte Carlo FTW	https://gist.github.com/roycoding/6e4dc97ecba3edf5a6fb	19-May-2014	
-Github Gists: Blogging for the lazy	https://gist.github.com/roycoding/9500675	11-Mar-2014	
+It's 2020 and I made an RSS feed for my blog (with Python)	https://gist.github.com/roycoding/c4af3c1ea4ae2d9b4ce9536dab20d3da	05/21/20	
+Multi-armed banditry in Python with slots	https://gist.github.com/roycoding/fc430c360c87a755047185b796c10a5e	08/22/16	
+A year of working remotely	https://gist.github.com/roycoding/59e209032abc8bd3473b	02/29/16	
+4 Core attributes of a data scientist	https://gist.github.com/roycoding/3739c6b3b54c27ba6ca3	01/17/16	
+Computer generated art (in Python)	http://nbviewer.ipython.org/gist/roycoding/13e70595e9c74e735c86	09/21/14	
+MapReduce Patterns (in Python)	https://gist.github.com/roycoding/b11b650d3ed8d4e86c39	09/17/14	
+Klackers strategy: Monte Carlo FTW	https://gist.github.com/roycoding/6e4dc97ecba3edf5a6fb	05/19/14	
+Github Gists: Blogging for the lazy	https://gist.github.com/roycoding/9500675	03/11/14	

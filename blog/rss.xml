@@ -1,5 +1,80 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>The Roycoding Blog</title><link>https://roycoding.com/blog</link><description>Occasional blog posts from roycoding</description><atom:link href="https://roycoding.com/blog" rel="self"/><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://www.gravatar.com/avatar/0b896dff2667cbfee4237e889f6d4446.jpg</url><title>The Roycoding Blog</title><link>https://roycoding.com/blog</link></image><language>en</language><lastBuildDate>Sat, 02 Oct 2021 19:05:05 +0000</lastBuildDate><item><title>Why I don’t screen resumes</title><link>https://roycoding.com/blog/2021/not_using_resumes.html</link><description>&lt;!DOCTYPE html&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>The Roycoding Blog</title><link>https://roycoding.com/blog</link><description>Occasional blog posts from roycoding</description><atom:link href="https://roycoding.com/blog" rel="self"/><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://www.gravatar.com/avatar/0b896dff2667cbfee4237e889f6d4446.jpg</url><title>The Roycoding Blog</title><link>https://roycoding.com/blog</link></image><language>en</language><lastBuildDate>Sat, 19 Nov 2022 22:25:11 +0000</lastBuildDate><item><title>The shortest definition of embeddings?</title><link>https://roycoding.com/blog/2022/embeddings.html</link><description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;The shortest definition of embeddings&amp;quest;&lt;/title&gt;
+    &lt;style&gt;
+        .vscode-dark img[src$=\#gh-light-mode-only],
+        .vscode-light img[src$=\#gh-dark-mode-only] {
+            display: none;
+        }
+    &lt;/style&gt;
+
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css"&gt;
+    &lt;style&gt;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    &lt;/style&gt;
+    &lt;style&gt;
+        .task-list-item {
+            list-style-type: none;
+        }
+
+        .task-list-item-checkbox {
+            margin-left: -20px;
+            vertical-align: middle;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body class="vscode-body vscode-light"&gt;
+    &lt;h1 id="the-shortest-definition-of-embeddings"&gt;The shortest definition of embeddings?&lt;/h1&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;a href="https://roycoding.com"&gt;Roy Keyes&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+    &lt;blockquote&gt;
+        &lt;p&gt;&lt;em&gt;19 Nov 2022&lt;/em&gt; - This is a post on my &lt;a href="https://roycoding.com/blog"&gt;blog&lt;/a&gt;. Get the &lt;a href="https://roycoding.com/blog/rss.xml"&gt;RSS feed&lt;/a&gt;!&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;p&gt;&lt;img src="https://roycoding.com/blog/2022/images/embeddings.jpg" alt="A Stable Diffusion generated image of an embedding space"&gt;&lt;/p&gt;
+    &lt;p&gt;Embeddings are a very important concept in deep learning and several related techniques. They are powerful and flexible and at the core of many modern machine learning systems. But, they are also tricky to describe.&lt;/p&gt;
+    &lt;p&gt;Here is my attempt to create a very succinct definition and description of embeddings.&lt;/p&gt;
+    &lt;blockquote&gt;
+        &lt;h2 id="embeddings-are-learned-transformations-to-make-data-more-useful"&gt;Embeddings are learned transformations to make data more useful&lt;/h2&gt;
+    &lt;/blockquote&gt;
+    &lt;p&gt;What does this mean?&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;p&gt;&lt;strong&gt;Learned&lt;/strong&gt; means that the parameters of the transformation are determined using the data, rather than just a fixed algorithm. The parameters are optimized for some task using the data as input. E.g. teaching a small neural network to determine if words found in a text dataset are from the same sentence. The network needs to transform the input text data in a way that makes this task as easy as possible (this is basically word2vec).&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;p&gt;&lt;strong&gt;Transformations&lt;/strong&gt; are how data is changed from being represented in one way into another. This typically means mapping data from one vector space to another, such as taking words from a vocabulary of 10k words that are one-hot-encoded in a 10k dimensional space to a 100 dimensional &amp;quot;dense&amp;quot; vector space.&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt; can be any type of information: words, sentences, images, audio, webpages, time series. Often the input data is considered a &amp;quot;feature&amp;quot; for machine learning.&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;p&gt;&lt;strong&gt;Useful&lt;/strong&gt; means that the new representation of the data contains more information in a way that makes the ultimate task easier. Useful can mean:&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Grouping similar items together or warping the representations to make existing groups more easily identifiable (e.g. linearly separable).&lt;/li&gt;
+                &lt;li&gt;Representing the data in fewer dimensions, whether to more easily encode relationships between the data or for computational efficiency.&lt;/li&gt;
+                &lt;li&gt;Being reusable for many closely related tasks.&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;Embeddings are incredibly useful for many data related tasks. They are especially useful for things like search (e.g. what other images are like this one?) and recommendations. More generally they are useful for working with data that is not inherently numeric, such as text, images, or audio.&lt;/p&gt;
+    &lt;p&gt;While I didn't touch on the technical aspects of creating or using embeddings, hopefully this is helpful as a conceptual overview for you.&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Note: My definition is slightly different from others, because I don't think that embeddings strictly need to be in a lower dimensional space, but that is often the best choice for the task at hand. What exactly qualifies as an embedding can get a little fuzzy when considering basic, non-learned encodings (does one-hot encoding count) or learned transformations that are only used as internal (latent) representations, etc.&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</description><author>roy@roycoding.com (Roy Keyes)</author><guid isPermaLink="false">https://roycoding.com/blog/2022/embeddings.html</guid><pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate></item><item><title>Why I don’t screen resumes</title><link>https://roycoding.com/blog/2021/not_using_resumes.html</link><description>&lt;!DOCTYPE html&gt;
     &lt;html&gt;
     &lt;head&gt;
         &lt;meta charset="UTF-8"&gt;
