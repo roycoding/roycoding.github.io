@@ -112,13 +112,26 @@
                 <h3 id="logo"><a href="https://roycoding.com/">Roy Keyes<a /></h3>
                 <ul>
                     <li><a class="menu" href="http://dshiring.com">My book on hiring</a></li>
-                    <li><a class="menu" href="http://dshiring.com"><img src="../../data/images/hdsmle_cover_200px.png" alt="Cover of the book Hiring Data Scientists and Machine Learning Engineers"></a></li>
+                    <li><a class="menu" href="http://dshiring.com"><img src="../../data/images/hdsmle_cover_200px.png"
+                                alt="Cover of the book Hiring Data Scientists and Machine Learning Engineers"></a></li>
                     <li><a class="menu" href="https://zefsdata.com">Zefs Data Science</a></li>
                     <li><a class="menu" href="https://roycoding.com/data/">Some data projects</a></li>
                     <li><a class="menu" href="https://roycoding.com/blog/">Blog</a></li>
-                    <li id="icons"><a class="menu" href="https://github.com/roycoding"><i class="fa fa-github fa-2x" title="Github profile"></i><img src="" alt="Github" style="display:none" /></a>&nbsp;&nbsp;&nbsp;<a class="menu" href="https://twitter.com/roycoding"><i class="fa fa-twitter fa-2x" title="Twitter: @roycoding"></i><img src="" alt="@roycoding" style="display:none" /></a>&nbsp;&nbsp;&nbsp;<a rel="me" class="menu" href="https://sigmoid.social/@roycoding"><i class="fa fa-bullhorn fa-2x" title="Mastodon: @roycoding@sigmoid.social"></i><img src="" alt="@roycoding@sigmoid.social"
-                        style="display:none" /></a></li>
-                  <li id="icons"><a class="menu" href="mailto:roy@roycoding.com"><i class="fa fa-envelope fa-2x" title="Email: roy@roycoding.com"></i><img src="" alt="Email" style="display:none" /></a>&nbsp;&nbsp;&nbsp;<a class="menu" href="https://roycoding.com/blog/rss.xml"><i class="fa fa-rss fa-2x" title="roycoding RSS feed"></i><img src="" alt="roycoding RSS feed" style="display:none" /></a></li>
+                    <li id="icons"><a class="menu" href="https://github.com/roycoding"><i class="fa fa-github fa-2x"
+                                title="Github profile"></i><img src="" alt="Github"
+                                style="display:none" /></a>&nbsp;&nbsp;&nbsp;<a class="menu"
+                            href="https://twitter.com/roycoding"><i class="fa fa-twitter fa-2x"
+                                title="Twitter: @roycoding"></i><img src="" alt="@roycoding"
+                                style="display:none" /></a>&nbsp;&nbsp;&nbsp;<a rel="me" class="menu"
+                            href="https://sigmoid.social/@roycoding"><i class="fa fa-bullhorn fa-2x"
+                                title="Mastodon: @roycoding@sigmoid.social"></i><img src=""
+                                alt="@roycoding@sigmoid.social" style="display:none" /></a></li>
+                    <li id="icons"><a class="menu" href="mailto:roy@roycoding.com"><i class="fa fa-envelope fa-2x"
+                                title="Email: roy@roycoding.com"></i><img src="" alt="Email"
+                                style="display:none" /></a>&nbsp;&nbsp;&nbsp;<a class="menu"
+                            href="https://roycoding.com/blog/rss.xml"><i class="fa fa-rss fa-2x"
+                                title="roycoding RSS feed"></i><img src="" alt="roycoding RSS feed"
+                                style="display:none" /></a></li>
                 </ul>
             </nav>
             &nbsp;
@@ -129,45 +142,71 @@
             </div>
             <p><strong><a href="https://roycoding.com">Roy Keyes</a></strong></p>
             <blockquote>
-                <p><em>19 Nov 2022</em> - This is a post on my <a href="https://roycoding.com/blog">blog</a>. Get the <a href="https://roycoding.com/blog/rss.xml">RSS feed</a>!</p>
+                <p><em>19 Nov 2022</em> - This is a post on my <a href="https://roycoding.com/blog">blog</a>. Get the <a
+                        href="https://roycoding.com/blog/rss.xml">RSS feed</a>!</p>
             </blockquote>
             <p><img src="images/embeddings.jpg" alt="A Stable Diffusion generated image of an embedding space"></p>
-            <p>Embeddings are a very important concept in deep learning and several related techniques. They are powerful and flexible and at the core of many modern machine learning systems. But, they are also tricky to describe.</p>
+            <p>Embeddings are a very important concept in deep learning and several related techniques. They are
+                powerful and flexible and at the core of many modern machine learning systems. But, they are also tricky
+                to describe.</p>
             <p>Here is my attempt to create a very succinct definition and description of embeddings.</p>
             <blockquote>
-                <h2 id="embeddings-are-learned-transformations-to-make-data-more-useful">Embeddings are learned transformations to make data more useful</h2>
+                <h2 id="embeddings-are-learned-transformations-to-make-data-more-useful">Embeddings are learned
+                    transformations to make data more useful</h2>
             </blockquote>
             <p>What does this mean?</p>
             <ul class="default">
                 <li class="default">
-                    <p><strong>Learned</strong> means that the parameters of the transformation are determined using the data, rather than just a fixed algorithm. The parameters are optimized for some task using the data as input. E.g. teaching a small neural network to determine if words found in a text dataset are from the same sentence. The network needs to transform the input text data in a way that makes this task as easy as possible (this is basically word2vec).</p>
+                    <p><strong>Learned</strong> means that the parameters of the transformation are determined using the
+                        data, rather than just a fixed algorithm. The parameters are optimized for some task using the
+                        data as input. E.g. teaching a small neural network to determine if words found in a text
+                        dataset are from the same sentence. The network needs to transform the input text data in a way
+                        that makes this task as easy as possible (this is basically word2vec).</p>
                 </li>
                 <li class="default">
-                    <p><strong>Transformations</strong> are how data is changed from being represented in one way into another. This typically means mapping data from one vector space to another, such as taking words from a vocabulary of 10k words that are one-hot-encoded in a 10k dimensional space to a 100 dimensional &quot;dense&quot; vector space.</p>
+                    <p><strong>Transformations</strong> are how data is changed from being represented in one way into
+                        another. This typically means mapping data from one vector space to another, such as taking
+                        words from a vocabulary of 10k words that are one-hot-encoded in a 10k dimensional space to a
+                        100 dimensional &quot;dense&quot; vector space.</p>
                 </li class="default">
                 <li class="default">
-                    <p><strong>Data</strong> can be any type of information: words, sentences, images, audio, webpages, time series. Often the input data is considered a &quot;feature&quot; for machine learning.</p>
+                    <p><strong>Data</strong> can be any type of information: words, sentences, images, audio, webpages,
+                        time series. Often the input data is considered a &quot;feature&quot; for machine learning.</p>
                 </li>
                 <li class="default">
-                    <p><strong>Useful</strong> means that the new representation of the data contains more information in a way that makes the ultimate task easier. Useful can mean:</p>
+                    <p><strong>Useful</strong> means that the new representation of the data contains more information
+                        in a way that makes the ultimate task easier. Useful can mean:</p>
                     <ul class="default">
-                        <li class="default">Grouping similar items together or warping the representations to make existing groups more easily identifiable (e.g. linearly separable).</li>
-                        <li class="default">Representing the data in fewer dimensions, whether to more easily encode relationships between the data or for computational efficiency.</li>
+                        <li class="default">Grouping similar items together or warping the representations to make
+                            existing groups more easily identifiable (e.g. linearly separable).</li>
+                        <li class="default">Representing the data in fewer dimensions, whether to more easily encode
+                            relationships between the data or for computational efficiency.</li>
                         <li class="default">Being reusable for many closely related tasks.</li>
                     </ul>
                 </li>
             </ul>
-            <p>Embeddings are incredibly useful for many data related tasks. They are especially useful for things like search (e.g. what other images are like this one?) and recommendations. More generally they are useful for working with data that is not inherently numeric, such as text, images, or audio.</p>
-            <p>While I didn't touch on the technical aspects of creating or using embeddings, hopefully this is helpful as a conceptual overview for you.</p>
+            <p>Embeddings are incredibly useful for many data related tasks. They are especially useful for things like
+                search (e.g. what other images are like this one?) and recommendations. More generally they are useful
+                for working with data that is not inherently numeric, such as text, images, or audio.</p>
+            <p>While I didn't touch on the technical aspects of creating or using embeddings, hopefully this is helpful
+                as a conceptual overview for you.</p>
             <ul class="default">
-                <li class="default"><em>Note</em>: My definition is slightly different from others, because I don't think that embeddings strictly need to be in a lower dimensional space, but that is often the best choice for the task at hand. What exactly qualifies as an embedding can get a little fuzzy when considering basic, non-learned encodings (does one-hot encoding count) or learned transformations that are only used as internal (latent) representations, etc.
+                <li class="default"><em>Note</em>: My definition is slightly different from others, because I don't
+                    think that embeddings strictly need to be in a lower dimensional space, but that is often the best
+                    choice for the task at hand. What exactly qualifies as an embedding can get a little fuzzy when
+                    considering basic, non-learned encodings (does one-hot encoding count) or learned transformations
+                    that are only used as internal (latent) representations, etc.
                 </li>
             </ul>
 
             <h3>Learn more in my book</h3>
-            <p>If you found this post useful, you'll probably also find my book useful: <a href="https://zefsguides.com">Zefs Guide to Deep Learning</a>. Zefs Guide to Deep Learning covers the most important topics in deep learning in a conceptual, easy to understand way, but enough technical detail to help data scientists and machine learning engineers solidify their understanding of what's really going on.</p>
+            <p>If you found this post useful, you'll probably also find my book useful: <a
+                    href="https://zefsguides.com">Zefs Guide to Deep Learning</a>. Zefs Guide to Deep Learning covers
+                the most important topics in deep learning in a conceptual, easy to understand way, but enough technical
+                detail to help data scientists and machine learning engineers solidify their understanding of what's
+                really going on.</p>
             <p><a href="https://zefsguides.com"><img src="../../data/images/zg_dl_ad.png"></a></p>
-            
+
         </div>
     </div>
 
